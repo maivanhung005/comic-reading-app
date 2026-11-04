@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: comic-reading-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: comic_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: comic_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - comic_pgdata:/var/lib/postgresql/data
+volumes:
+  comic_pgdata:

@@ -1,0 +1,5 @@
+# Exemple uniquement : ne pas utiliser tel quel sur un autre ordinateur.
+# Copiez ce fichier vers local.properties puis corrigez les deux chemins.
+# Utilisez des / pour éviter les caractères d’échappement des fichiers .properties.
+sdk.dir=C:/Users/YOUR_USER/AppData/Local/Android/Sdk
+flutter.sdk=C:/src/flutter

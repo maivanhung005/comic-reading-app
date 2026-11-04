@@ -1,0 +1,16 @@
+.DS_Store
+.idea/
+.vscode/
+*.iml
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/build/
+**/.packages
+**/local.properties
+**/.env.local
+**/*.db
+**/*.sqlite
+/backend/target/
+/backend/uploads/*
+!/backend/uploads/.gitkeep

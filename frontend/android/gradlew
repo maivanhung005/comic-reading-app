@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+APP_HOME="$(cd "$(dirname "$0")" && pwd -P)"
+WRAPPER_JAR="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
+if [ ! -f "$WRAPPER_JAR" ]; then
+  echo "Gradle wrapper JAR is not included in this ZIP. Run 'flutter create --platforms=android .' from the frontend folder once, then retry." >&2
+  exit 1
+fi
+if [ -n "$JAVA_HOME" ]; then JAVA="$JAVA_HOME/bin/java"; else JAVA=java; fi
+exec "$JAVA" -Dorg.gradle.appname=gradlew -classpath "$WRAPPER_JAR" org.gradle.wrapper.GradleWrapperMain "$@"

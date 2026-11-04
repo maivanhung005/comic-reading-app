@@ -1,0 +1,9 @@
+target/
+logs/
+uploads/*
+!uploads/.gitkeep
+
+# Local credentials and secret configuration
+.env.local
+.env
+secrets/

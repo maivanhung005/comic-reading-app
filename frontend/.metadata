@@ -1,0 +1,4 @@
+version:
+  revision: "project-template"
+  channel: "stable"
+project_type: app
